@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>Junking图片滤镜工具</title>
+		<link rel="stylesheet" type="text/css" href="css/imgChange.css"/>
+	</head>
+
+	<body>
+		<div>
+			<figure>
+				<img src="img/Junking.jpg" alt="原始图片" width="500px" height="500px" />
+				<figcaption>原始图片</figcaption>
+			</figure>
+			<figure id="f">
+				<img src="img/Junking.jpg" alt="修改图片" width="500px" height="500px" />
+				<figcaption>修改图片</figcaption>
+			</figure>
+		</div>
+		<div id="changeArea">
+			<div>
+				<span>高斯模糊</span><input type="range" id="blur" step="1" max="30" min="0" value="0" onmousemove="Change(this)" />
+			</div>
+			<div>
+				<span>高亮滤镜</span><input type="range" id="brightness" step="0.01" max="2" min="0" value="1" onmousemove="Change(this)" />
+			</div>
+			<div>
+				<span>对比滤镜</span><input type="range" id="contrast" step="0.01" max="2" min="0" value="1" onmousemove="Change(this)" />
+			</div>
+			<div>
+				<span>灰度滤镜</span><input type="range" id="grayscale" step="0.01" max="1" min="0" value="0" onmousemove="Change(this)" />
+			</div>
+			<div>
+				<span>色调旋转</span><input type="range" id="hue-rotate" step="1" max="360" min="0" value="0" onmousemove="Change(this)" />
+			</div>
+			<div>
+				<span>色彩翻转</span><input type="range" id="invert" step="0.01" max="1" min="0" value="0" onmousemove="Change(this)" />
+			</div>
+			<div>
+				<span>透明滤镜</span><input type="range" id="opacity" step="0.01" max="1" min="0" value="1" onmousemove="Change(this)" />
+			</div>
+			<div>
+				<span>饱和滤镜</span><input type="range" id="saturate" step="0.01" max="1" min="0" value="1" onmousemove="Change(this)" />
+			</div>
+			<div>
+				<span>褐色滤镜</span><input type="range" id="sepia" step="0.01" max="1" min="0" value="0" onmousemove="Change(this)" />
+			</div>
+		</div>
+ 
+	</body>
+			<script src="js/imgChange.js" type="text/javascript" charset="utf-8"></script>
+
+
+</html>

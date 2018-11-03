@@ -1,0 +1,11 @@
+body figure {
+	display: inline-block;
+}
+
+figure>figcaption {
+	text-align: center;
+}
+
+#changeArea {
+	align-content: center;
+}
